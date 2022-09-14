@@ -2,7 +2,7 @@
 version: '3'
 services:
   freqtrade:
-    image: heliodocker/duongbot004:tagname
+    image: heliodocker/duongbot004:latest
     # image: freqtradeorg/freqtrade:develop
     # Use plotting image
     # image: freqtradeorg/freqtrade:develop_plot
