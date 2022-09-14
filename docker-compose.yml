@@ -1,7 +1,7 @@
 ---
 version: '3'
 services:
-  freqtrade:
+  duongbot004:
     image: heliodocker/duongbot004:latest
     # image: freqtradeorg/freqtrade:develop
     # Use plotting image
