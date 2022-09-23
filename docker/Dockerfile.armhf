@@ -29,9 +29,9 @@ RUN  apt-get update \
   && echo "[global]\nextra-index-url=https://www.piwheels.org/simple" > /etc/pip.conf
 
 # Install TA-lib
-COPY build_helpers/* /tmp/
-RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*ta-lib*
-ENV LD_LIBRARY_PATH /usr/local/lib
+#COPY build_helpers/* /tmp/
+#RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*ta-lib*
+#ENV LD_LIBRARY_PATH /usr/local/lib
 
 # Install dependencies
 COPY --chown=ftuser:ftuser requirements.txt /freqtrade/
